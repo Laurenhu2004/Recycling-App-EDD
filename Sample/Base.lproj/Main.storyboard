@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hKj-te-BX1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hKj-te-BX1">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -56,6 +56,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ywW-bA-rb2"/>
+                    <connections>
+                        <outlet property="loginButton" destination="J6H-oG-xaU" id="1Sw-DY-ACx"/>
+                        <outlet property="signUpButton" destination="mMZ-0p-ESb" id="okt-7p-AJi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,6 +93,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                        <connections>
+                                            <action selector="loginTapped:" destination="NVM-c9-kvH" eventType="touchUpInside" id="pDC-WN-W2H"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ih4-6n-7VL">
                                         <rect key="frame" x="0.0" y="180" width="334" height="40"/>
@@ -113,6 +120,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="w84-9j-FDD"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="IJX-vM-ICt" id="JhZ-Xm-Hba"/>
+                        <outlet property="errorLabel" destination="ih4-6n-7VL" id="cfB-XK-W8W"/>
+                        <outlet property="loginButton" destination="xFM-vD-BgE" id="H9k-Bw-vWm"/>
+                        <outlet property="passwordTextField" destination="cYL-ui-EYt" id="iIX-Fk-FN7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggL-Vw-5Tr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -156,6 +169,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="signUpTapped:" destination="cPb-WU-2WI" eventType="touchUpInside" id="1Qm-tW-GVm"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w59-4S-N22">
                                         <rect key="frame" x="0.0" y="300" width="334" height="20.5"/>
@@ -181,6 +197,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EXx-Hf-m6U"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="kIp-kY-ZuO" id="1DB-s1-M9c"/>
+                        <outlet property="errorLabel" destination="w59-4S-N22" id="8Om-qW-OwS"/>
+                        <outlet property="firstNameTextField" destination="1Fj-ky-iGU" id="LPr-nB-RCT"/>
+                        <outlet property="lastNameTextField" destination="ihj-74-1jF" id="nrA-04-1Zv"/>
+                        <outlet property="passwordTextField" destination="GqR-eQ-rc7" id="0gR-Dt-L8n"/>
+                        <outlet property="signUpButton" destination="LuV-Ta-cvx" id="jUJ-hl-Iek"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KOT-In-4iD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,12 +218,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PZ-h0-tNe">
-                                <rect key="frame" x="172" y="596" width="71" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EDD Green Background - Home" translatesAutoresizingMaskIntoConstraints="NO" id="iAa-07-WZQ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -225,10 +243,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wpy-D2-2eF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="8PZ-h0-tNe" firstAttribute="centerY" secondItem="X2b-jf-uCo" secondAttribute="centerY" id="Cy0-HN-BRz"/>
-                            <constraint firstItem="8PZ-h0-tNe" firstAttribute="centerX" secondItem="X2b-jf-uCo" secondAttribute="centerX" id="wf2-RM-Pa4"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u6t-lc-89m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
